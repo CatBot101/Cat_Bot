@@ -1122,8 +1122,9 @@ def bot(op):
 #--------------------------------------------------------
             elif msg.text in ["Sp","Speed","speed"]:
                 start = time.time()
-                cl.sendText(msg.to, "Progress...")
+                print("Speed")                
                 elapsed_time = time.time() - start
+		cl.sendText(msg.to, "Progress...")
                 cl.sendText(msg.to, "%sseconds" % (elapsed_time))
                 ki.sendText(msg.to, "%sseconds" % (elapsed_time))
                 kk.sendText(msg.to, "%sseconds" % (elapsed_time))
